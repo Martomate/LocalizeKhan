@@ -69,7 +69,7 @@ def translateIndex(text):
     tags:
       - Translation API
     parameters:
-      - textIn: text
+      - name: text
         in: path
         type: string
         required: true
@@ -83,11 +83,10 @@ def translateIndex(text):
             text:
               type: string
               description: The text
-              default: {txtIn}
             translation:
               type: string
               description: The translation
-    """.format(txtIn=textIn)
+    """
 
     translation = translate(text, "sv")
 
@@ -105,7 +104,7 @@ def classificationIndex(text):
     tags:
       - Classification API
     parameters:
-      - textIn: text
+      - name: text
         in: path
         type: string
         required: true
