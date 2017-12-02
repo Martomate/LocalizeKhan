@@ -91,7 +91,7 @@ def translateIndex(text):
     translation = translate(text, "sv")
 
     return jsonify(
-        text=textIn,
+        text=text,
         translation=translation
     )
 
@@ -123,10 +123,10 @@ def classificationIndex(text):
               description: Whether it's good or bad
     """
 
-    isGood = textIn == 'yeah'
+    isGood = text == 'yeah'
 
     return jsonify(
-        text=textIn,
+        text=text,
         isGood=isGood
     )
 
