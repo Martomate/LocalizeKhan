@@ -1,4 +1,4 @@
 Flask
 gunicorn
 flasgger
-google-cloud
+google-cloud-translate
