@@ -68,7 +68,7 @@ def classificationIndex(text):
     tags:
       - Translation API
     parameters:
-      - text: string
+      - text: text
         in: path
         type: string
         required: true
@@ -99,7 +99,7 @@ def classificationIndex(text):
     tags:
       - Classification API
     parameters:
-      - text: string
+      - text: text
         in: path
         type: string
         required: true
