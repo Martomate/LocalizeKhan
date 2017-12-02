@@ -78,7 +78,7 @@ def translateIndex(text):
       200:
         description: Whether it's good or bad
         schema:
-          id: translator
+          id: translate
           properties:
             text:
               type: string
