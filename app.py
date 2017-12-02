@@ -11,8 +11,8 @@ Swagger(app)
 @app.route('/', methods=['GET'])
 def index():
     text = request.args.get('text', '')
-    translation = json.loads(translateIndex(text))[0]['translation']
-    classif = json.loads(classificationIndex(text))[0]['goodness']
+    translation = translate(text)
+    classif = classification(text)
     return jsonify(
         translation=translation,
         classification=classif
