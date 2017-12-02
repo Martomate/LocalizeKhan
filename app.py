@@ -88,7 +88,7 @@ def translateIndex(text):
               description: The translation
     """
 
-    translation = translate(text, "sv")
+    translation = google_translate.translate(text, "sv")
 
     return jsonify(
         text=text,
