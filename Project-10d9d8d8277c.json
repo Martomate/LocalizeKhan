@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "api-project-592963063199",
+  "private_key_id": "10d9d8d8277c09cf251b1288ae2549fb37865b10",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDaHB5W+wmebiNO\nQ2i3Uo10ASc8ctkXUeN8FD9gAGDZ7CaT1n/YBGMfrzOShQ/s2UoDaO/rIZdku7wL\nD1fFQfgcssQ6cG2F+ikSk+F92iMOHA1DqTMvEby6NPe+rjA88CU3Sr9jLUZMC9Tn\nczQ4Rmto3P+kDT2URkC1veP6sRgM1+lAgFLtYTJg6kJSkI9vh1ENS4Qyvgt/XHUQ\nqYZxwKADfyeCb4THKaW/t06c1D07W/2ke9ISUC+UIc+y7ayhJRlCpori6DyjkX/y\nr8NMBcTRaRCFEWoPt6UHWNv3iQuLpexJtJmwuO88NsAS86xd88kY0sJBeGGjukkl\n7vNwHJD5AgMBAAECggEAZoDwgVBZpOt+DDoB7KYPdIVWO0J+ZEdH8fhSEHwdCE3D\nk5crXgoxy6I7SpDeeyFjd1bJ6mdPDzhrl4cOaNYoFNSvBAfycRSwWNrHDq6F6wuj\n8DiEpYpgd+KMzEBwyzLRSrsGV0Xf0717wYqS8B+oOxAh1KekWRrrLn6ftiGke+Pe\nN8/PgvlDWIt/OAyku+dXlDLISc31N7pOJUTUXNj/EfeHbO45LgeK8o8GMehW1GSS\nC3DexP43rPQhIbCK7EmxSrSiAbM34E8rjjqoKeLHZrELT2rczmjJsE284ghBI8JR\nX7R/LaS1Fpg6ecw+NE9JFo+CpNHBGwXuEVD0dbwzQQKBgQD+QIobgCLxDCE/IF6+\ncoYeusWsNR3eUxqiA3dKh7wYLaXcIQPCcnZWoFpizaA3+kVWMN0cmGZyuy/lNCWJ\ne5BXPfC2njMrv/64GyqnmLPxay4YGZCvCNLI2Dlgk1tOm81aCpsFdLciZGyNwF+e\nHJ3NtCYNoItz6nMwENay4NzCowKBgQDbm/jQvNRYUqrCiO+/oQKhZ1DPpBLRw3ei\npdcw3L2utZxw+pM0mQy8FoDBPuyqt54/Up1tWTkom2goSSySFZWTb7cvtfgDB2vZ\njP7fBUgbZksLkPQx1xrrItOR3jfRlUDKWaYFyZsciovzIwvPexK2UwyDQSNnbwMy\n9GNXgr4zswKBgQDPmNTrZXGiTdwrlfumFw6JssjKNkigCkz5skjJ0xBy0XrWxSIz\nt5AGZUHH4MuMSU4p9RXlTk6AKXUO+cgYfIq7oTiVc5CmjUqm+o+WbqmmWnQ1e1JW\niKbLFTmsMEViZvaCKZywFL+fVk4IY+XuzMDQf+J+R/L1f53zxhv3zICUbwKBgBDh\nxpjVS0WW5UWbHUMP75HUzWOI62Fws0uvkAFTlslNcL9Go/ZRJad322H/olXlU6bu\nhOeZCknS2IjwRxrbyenRlrV2OaCR+3p32kfusgJZNL+o3vzN2mXlAXqfKI9V9+sW\nRSsAuonRJL0GHqxOe7vEWpvkcAJNiGNsYg6iIFj9AoGBAIPLFN0d+524rWef+ddP\nW9V2K/+O7hPoglS1Q6MeNYy3I+RPgIDt4HSswHm2C0A7HJSUL3lp0Qpi+dQmT6ah\nEk7LXc22pWCSuuoONECjcWoZuLTlYeUmoPT39QdU++J2ZHtUpE58+voMujMV3DF/\niJFkoFeYDAmGB5c5uZtLMZlZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "openhack-localizekhan@api-project-592963063199.iam.gserviceaccount.com",
+  "client_id": "103763767897670174800",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/openhack-localizekhan%40api-project-592963063199.iam.gserviceaccount.com"
+}
