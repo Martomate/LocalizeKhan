@@ -13,5 +13,15 @@ def homepage():
     <img src="http://loremflickr.com/600/400">
     """.format(time=the_time)
 
+@app.route('/classifier/')
+def classifier():
+    return """
+    <h1>Classifier</h1>
+
+    {content}
+    """.format(content=system('python classifier.py'))
+
+
+
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
