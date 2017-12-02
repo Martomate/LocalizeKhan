@@ -2,7 +2,7 @@ import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
 import urllib.request
-from google_translate import translate
+from googleTranslate import translate
 
 app = Flask(__name__)
 Swagger(app)
