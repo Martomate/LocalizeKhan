@@ -46,8 +46,8 @@ def index(language):
 
     language = language.lower().strip()
     features = [
-        "awesome", "great", "dynamic", 
-        "simple", "powerful", "amazing", 
+        "awesome", "great", "dynamic",
+        "simple", "powerful", "amazing",
         "perfect", "beauty", "lovely"
     ]
     size = int(request.args.get('size', 1))
@@ -62,3 +62,16 @@ def index(language):
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
 
+=======
+@app.route('/classifier/')
+def classifier():
+    return """
+    <h1>Classifier</h1>
+
+    {content}
+    """.format(content=system('python classifier.py'))
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=True)
