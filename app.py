@@ -69,7 +69,7 @@ def translateIndex(text):
     tags:
       - Translation API
     parameters:
-      - text: text
+      - textIn: text
         in: path
         type: string
         required: true
@@ -91,7 +91,7 @@ def translateIndex(text):
     translation = translate(text, "sv")
 
     return jsonify(
-        text=text,
+        text=textIn,
         translation=translation
     )
 
@@ -104,7 +104,7 @@ def classificationIndex(text):
     tags:
       - Classification API
     parameters:
-      - text: text
+      - textIn: text
         in: path
         type: string
         required: true
@@ -123,10 +123,10 @@ def classificationIndex(text):
               description: Whether it's good or bad
     """
 
-    isGood = text == 'yeah'
+    isGood = textIn == 'yeah'
 
     return jsonify(
-        text=text,
+        text=textIn,
         isGood=isGood
     )
 
