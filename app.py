@@ -58,11 +58,6 @@ def index(language):
         features=random.sample(features, size)
     )
 
-
-if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
-
-=======
 @app.route('/classifier/')
 def classifier():
     return """
