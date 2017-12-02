@@ -1,6 +1,7 @@
 import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
+import urllib.request
 
 app = Flask(__name__)
 Swagger(app)
@@ -58,14 +59,67 @@ def index(language):
         features=random.sample(features, size)
     )
 
-@app.route('/classifier/')
-def classifier():
-    return """
-    <h1>Classifier</h1>
+@app.route('/api/translate/<string:text>', methods=['GET'])
+def classificationIndex(text):
+    """
+    This is the translator API
+    Call this api passing a piece of text and get back the Swedish translation
+    ---
+    tags:
+      - Translation API
+    parameters:
+      - text: text
+        in: path
+        type: string
+        required: true
+        description: The text
+    responses:
+      200:
+        description: Whether it's good or bad
+        schema:
+          id: translator
+          properties:
+            translation:
+              text: string
+              description: The translation
+    """
 
-    {content}
-    """.format(content=system('python classifier.py'))
+    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
 
+    return jsonify(
+        translation=translation
+    )
+
+@app.route('/api/classifier/<string:text>', methods=['GET'])
+def classificationIndex(text):
+    """
+    This is the classifier API
+    Call this api passing a piece of text and get back whether it's good or not
+    ---
+    tags:
+      - Classification API
+    parameters:
+      - text: text
+        in: path
+        type: string
+        required: true
+        description: The text
+    responses:
+      200:
+        description: Whether it's good or bad
+        schema:
+          id: classifier
+          properties:
+            isGood:
+              type: boolean
+              description: Whether it's good or bad
+    """
+
+    isGood = text == 'yeah'
+
+    return jsonify(
+        isGood=isGood
+    )
 
 
 if __name__ == '__main__':
