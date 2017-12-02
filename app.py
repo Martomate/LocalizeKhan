@@ -1,7 +1,7 @@
 import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
-#import urllib.request
+import urllib.request
 
 app = Flask(__name__)
 Swagger(app)
@@ -79,14 +79,18 @@ def translateIndex(text):
         schema:
           id: translator
           properties:
+            text:
+              type: string
+              description: The text
             translation:
-              text: string
+              type: string
               description: The translation
     """
 
-#    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
+    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
 
     return jsonify(
+        text=text,
         translation=translation
     )
 
@@ -110,6 +114,9 @@ def classificationIndex(text):
         schema:
           id: classifier
           properties:
+            text:
+              type: string
+              description: The text
             isGood:
               type: boolean
               description: Whether it's good or bad
@@ -118,6 +125,7 @@ def classificationIndex(text):
     isGood = text == 'yeah'
 
     return jsonify(
+        text=text,
         isGood=isGood
     )
 
