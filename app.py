@@ -83,8 +83,6 @@ def classificationIndex(text):
               description: Whether it's good or bad
     """
 
-    text = request.args.get('text', '')
-
     isGood = text == 'yeah'
 
     return jsonify(
