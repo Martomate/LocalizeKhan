@@ -60,7 +60,7 @@ def index(language):
         features=random.sample(features, size)
     )
 
-@app.route('/api/translate/<string:text>', methods=['GET'])
+@app.route('/api/translate/<string:text>/', methods=['GET'])
 def translateIndex(text):
     """
     This is the translator API
@@ -95,7 +95,7 @@ def translateIndex(text):
         translation=translation
     )
 
-@app.route('/api/classifier/<string:text>', methods=['GET'])
+@app.route('/api/classifier/<string:text>/', methods=['GET'])
 def classificationIndex(text):
     """
     This is the classifier API
