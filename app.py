@@ -58,8 +58,8 @@ def index(language):
         features=random.sample(features, size)
     )
 
-@app.route('/api/classifier/', methods=['GET'])
-def index(language):
+@app.route('/api/classifier/<string:text>', methods=['GET'])
+def classificationIndex(text):
     """
     This is the classifier API
     Call this api passing a piece of text and get back whether it's good or not
@@ -83,9 +83,9 @@ def index(language):
               description: Whether it's good or bad
     """
 
-    text = int(request.args.get('text', ''))
+    text = request.args.get('text', '')
 
-    isGood = text == "yeah"
+    isGood = text == 'yeah'
 
     return jsonify(
         isGood=isGood
