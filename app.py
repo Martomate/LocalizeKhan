@@ -5,7 +5,7 @@ import urllib.request
 import googleTranslate
 import pickle
 import json
-#import wordlist
+import wordlist
 
 app = Flask(__name__)
 Swagger(app)
