@@ -8,4 +8,4 @@ def getKeysStartingWith(text):
 def getTranslation(phrase):
     if (phrase == 'number line')
         return 'tallinje'
-    return None
+    return phrase
