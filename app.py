@@ -60,7 +60,7 @@ def index(language):
     )
 
 @app.route('/api/translate/<string:text>', methods=['GET'])
-def classificationIndex(text):
+def translateIndex(text):
     """
     This is the translator API
     Call this api passing a piece of text and get back the Swedish translation
