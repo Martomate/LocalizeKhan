@@ -14,7 +14,7 @@ Swagger(app)
 def index():
     text = request.args.get('text', '')
     translationSimple = translateSimple(text)
-    translation = translate(text)
+    translation = translateAdvanced(text)
     return jsonify(
         translationWithoutWordlist=translationSimple,
         classificationWithoutWordlist=classification(translationSimple),
@@ -49,7 +49,7 @@ def translateIndex(text):
     """
 
     return jsonify(
-        translation=translate(text)
+        translation=translateAdvanced(text)
     )
 
 @app.route('/api/classifier/<string:text>/', methods=['GET'])
@@ -85,7 +85,7 @@ def translateSimple(text):
     translation = googleTranslate.translate(text, 'sv')
     return translation
 
-def translate(text):
+def translateAdvanced(text):
     translation = translateSimple(text)
 """
     words = text.split(' ')
