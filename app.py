@@ -2,6 +2,7 @@ import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
 import urllib.request
+import google_translate
 
 app = Flask(__name__)
 Swagger(app)
@@ -87,7 +88,7 @@ def translateIndex(text):
               description: The translation
     """
 
-    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
+    translation = translate(text, "sv")
 
     return jsonify(
         text=text,
