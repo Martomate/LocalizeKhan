@@ -83,10 +83,11 @@ def translateIndex(text):
             text:
               type: string
               description: The text
+              default: {txtIn}
             translation:
               type: string
               description: The translation
-    """
+    """.format(txtIn=textIn)
 
     translation = translate(text, "sv")
 
