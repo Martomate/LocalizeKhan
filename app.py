@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request
 from flasgger import Swagger
 import urllib.request
 from googleTranslate import translate
+import pickle
 
 app = Flask(__name__)
 Swagger(app)
@@ -83,16 +84,12 @@ def translateIndex(text):
             translation:
               type: string
               description: The translation
-            goodness:
-              type: number
-              description: How good the translation is
     """
 
     translation = translate(text, "sv")
 
     return jsonify(
-        translation=translation,
-        goodness=classification(translation)
+        translation=translation
     )
 
 @app.route('/api/classifier/<string:text>/', methods=['GET'])
@@ -115,17 +112,21 @@ def classificationIndex(text):
         schema:
           id: classifier
           properties:
-            goodness:
+            isGood:
               type: number
-              description: How good the text is
+              description: Whether it's good or bad
     """
-
+    text = [text]
+    print('Text is {}'.format(text))
+    clf_name = 'clf_dummy'
+    clf = pickle.load(open(clf_name, 'rb'))
+    prob = clf.predict_proba(text)
+    print(prob)
+    prob = prob[0][0]
+    print('Sliced prob',prob)
     return jsonify(
-        goodness=classification(text)
+        isGood=prob
     )
-
-def classification(text):
-  return 0.9
 
 
 if __name__ == '__main__':
