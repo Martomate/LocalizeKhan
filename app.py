@@ -1,6 +1,7 @@
 import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
+import urllib.request
 
 app = Flask(__name__)
 Swagger(app)
@@ -56,6 +57,37 @@ def index(language):
     return jsonify(
         language=language,
         features=random.sample(features, size)
+    )
+
+@app.route('/api/translate/<string:text>', methods=['GET'])
+def classificationIndex(text):
+    """
+    This is the translator API
+    Call this api passing a piece of text and get back the Swedish translation
+    ---
+    tags:
+      - Translation API
+    parameters:
+      - text: string
+        in: path
+        type: string
+        required: true
+        description: The text
+    responses:
+      200:
+        description: Whether it's good or bad
+        schema:
+          id: translator
+          properties:
+            translation:
+              text: string
+              description: The translation
+    """
+
+    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
+
+    return jsonify(
+        translation=translation
     )
 
 @app.route('/api/classifier/<string:text>', methods=['GET'])
