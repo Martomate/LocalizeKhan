@@ -80,9 +80,6 @@ def translateIndex(text):
         schema:
           id: translate
           properties:
-            text:
-              type: string
-              description: The text
             translation:
               type: string
               description: The translation
@@ -115,9 +112,6 @@ def classificationIndex(text):
         schema:
           id: classifier
           properties:
-            text:
-              type: string
-              description: The text
             isGood:
               type: boolean
               description: Whether it's good or bad
