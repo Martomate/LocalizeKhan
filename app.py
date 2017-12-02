@@ -2,9 +2,10 @@ import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
 import urllib.request
-from googleTranslate import translate
+import googleTranslate
 import pickle
 import json
+import wordlist
 
 app = Flask(__name__)
 Swagger(app)
@@ -12,11 +13,13 @@ Swagger(app)
 @app.route('/', methods=['GET'])
 def index():
     text = request.args.get('text', '')
-    translation = translate(text, 'sv')
-    classif = classification(text)
+    translationSimple = translateSimple(text)
+    translation = translate(text)
     return jsonify(
+        translationWithoutWordlist=translationSimple,
+        classificationWithoutWordlist=classification(translationSimple),
         translation=translation,
-        classification=classif
+        classification=classification(translation)
     )
 
 
@@ -46,7 +49,7 @@ def translateIndex(text):
     """
 
     return jsonify(
-        translation=translate(text, "sv")
+        translation=translate(text)
     )
 
 @app.route('/api/classifier/<string:text>/', methods=['GET'])
@@ -77,6 +80,22 @@ def classificationIndex(text):
     return jsonify(
         isGood=classification(text)
     )
+
+def translateSimple(text):
+    translation = googleTranslate.translate(text, 'sv')
+    return translation
+
+def translate(text):
+    translation = translate(text)
+
+    words = text.split(' ')
+
+    for word in words:
+        for phrase in wordlist.getKeysStartingWith(word):
+            tr = wordlist.getTranslation(phrase)
+            if (tr != None) translation = translation.replace(phrase, tr)
+
+    return translation
 
 def classification(text):
     text = [text]
