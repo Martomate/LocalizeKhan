@@ -86,7 +86,7 @@ def translateSimple(text):
     return translation
 
 def translate(text):
-    translation = translate(text)
+    translation = translateSimple(text)
 
     words = text.split(' ')
 
