@@ -9,7 +9,7 @@ import json
 
 app = Flask(__name__)
 Swagger(app)
-"""
+
 @app.route('/', methods=['GET'])
 def index():
     text = request.args.get('text', '')
@@ -21,7 +21,7 @@ def index():
         translation=translation,
         classification=classification(translation)
     )
-"""
+
 
 @app.route('/api/translate/<string:text>/', methods=['GET'])
 def translateIndex(text):
