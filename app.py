@@ -83,12 +83,16 @@ def translateIndex(text):
             translation:
               type: string
               description: The translation
+            goodness:
+              type: number
+              description: How good the translation is
     """
 
     translation = translate(text, "sv")
 
     return jsonify(
-        translation=translation
+        translation=translation,
+        goodness=classificationIndex(translation)
     )
 
 @app.route('/api/classifier/<string:text>/', methods=['GET'])
@@ -111,15 +115,15 @@ def classificationIndex(text):
         schema:
           id: classifier
           properties:
-            isGood:
-              type: boolean
-              description: Whether it's good or bad
+            goodness:
+              type: number
+              description: How good the text is
     """
 
-    isGood = text == 'yeah'
+    goodness = 0.9
 
     return jsonify(
-        isGood=isGood
+        goodness=goodness
     )
 
 
