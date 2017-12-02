@@ -92,7 +92,7 @@ def translateIndex(text):
 
     return jsonify(
         translation=translation,
-        goodness=classificationIndex(translation)
+        goodness=classification(translation)
     )
 
 @app.route('/api/classifier/<string:text>/', methods=['GET'])
@@ -120,11 +120,12 @@ def classificationIndex(text):
               description: How good the text is
     """
 
-    goodness = 0.9
-
     return jsonify(
-        goodness=goodness
+        goodness=classification(text)
     )
+
+def classification(text):
+  return 0.9
 
 
 if __name__ == '__main__':
