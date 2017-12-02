@@ -93,7 +93,8 @@ def translateAdvanced(text):
     for word in words:
         for phrase in wordlist.getKeysStartingWith(word):
             tr = wordlist.getTranslation(phrase)
-            if (tr != None) translation = translation.replace(phrase, tr)
+            if (tr != None):
+                translation = translation.replace(phrase, tr)
 
     return translation
 
