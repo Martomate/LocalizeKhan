@@ -84,7 +84,7 @@ def classificationIndex(text):
               description: The translation
     """
 
-    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
+#    translation = urllib.request.urlopen("https://translate.google.se/#en/sv/" + text).read()
 
     return jsonify(
         translation=translation
