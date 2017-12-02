@@ -73,6 +73,12 @@ def classificationIndex(text):
               type: number
               description: Whether it's good or bad
     """
+
+    return jsonify(
+        isGood=classification(text)
+    )
+
+def classification(text):
     text = [text]
 
     clf_name = 'clf_dummy'
@@ -80,9 +86,7 @@ def classificationIndex(text):
     prob = clf.predict_proba(text)
     prob = prob[0][0]
 
-    return jsonify(
-        isGood=prob
-    )
+    return prob
 
 
 if __name__ == '__main__':
