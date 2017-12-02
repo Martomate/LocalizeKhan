@@ -2,3 +2,5 @@ Flask
 gunicorn
 flasgger
 google-cloud-translate
+pickle
+sklearn
