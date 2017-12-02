@@ -7,8 +7,9 @@ from googleTranslate import translate
 app = Flask(__name__)
 Swagger(app)
 
-@app.route('/<string:text>', methods=['GET'])
-def index(text):
+@app.route('/', methods=['GET'])
+def index():
+    text = request.args.get('text', '')
     translation = json.loads(translateIndex(text))[0]['translation']
     classif = json.loads(classificationIndex(text))[0]['goodness']
     return jsonify(
