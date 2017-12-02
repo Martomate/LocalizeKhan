@@ -12,7 +12,7 @@ Swagger(app)
 def index():
     text = request.args.get('text', '')
     translation = translate(text)
-    classif = classification(text)
+    classif = classification(text, 'sv')
     return jsonify(
         translation=translation,
         classification=classif
