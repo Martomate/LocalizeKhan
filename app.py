@@ -13,7 +13,7 @@ Swagger(app)
 def index():
     text = request.args.get('text', '')
     translation = translate(text, 'sv')
-    classif = classification(text)
+    classif = json.loads(classificationIndex(text))[0]['isGood']
     return jsonify(
         translation=translation,
         classification=classif
@@ -74,13 +74,12 @@ def classificationIndex(text):
               description: Whether it's good or bad
     """
     text = [text]
-    print('Text is {}'.format(text))
+
     clf_name = 'clf_dummy'
     clf = pickle.load(open(clf_name, 'rb'))
     prob = clf.predict_proba(text)
-    print(prob)
     prob = prob[0][0]
-    print('Sliced prob',prob)
+
     return jsonify(
         isGood=prob
     )
