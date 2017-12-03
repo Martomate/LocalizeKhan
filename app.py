@@ -19,8 +19,8 @@ def index():
 <h1>
 LocalizeKhan
 </h1>
-<form action=".">
-<input type="text" name="text", value="{value}">
+<textarea name="text" cols=50 rows=4 form="textForm">{value}</textarea><br /><br />
+<form action="." id="textForm">
 <input type="submit" value="Translate">
 </form>
     """.format(value=text)
