@@ -306,6 +306,7 @@ negative number=Negativa tal
 newton's method=Newtons metod
 nonagon=Nonagon
 nonnegative=Signum
+number line=tallinje
 disjoint sets=Disjunkta mängder
 invertible matrix=Inverterbar matris
 nontrivial=Triviala lösningen
