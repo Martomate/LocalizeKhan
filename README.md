@@ -19,12 +19,17 @@ First, create a dataset and store it in training_data.txt and then train the cla
 python khan_clf.py
 ```
 
-Run:
+Run a
 
 ```bash
 flask run
 ```
 
+Visit [http://localhost:5000/apidocs/](http://localhost:5000/apidocs/) for details how to use the api
+
+# Available demo of API docs online
+
+Visit [http://localizekhan.herokuapp.com/apidocs/](http://localizekhan.herokuapp.com/apidocs/) for trying out the API.
 
 # Licence
 
