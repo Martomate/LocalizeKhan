@@ -3,10 +3,10 @@ Our solution improves the process of proofreading by automatically classifying t
 
 Please note: The classifier has not yet been trained with very much data.
 
-#Setup
+# Setup
 
 ```bash
-pip install Flask gunicorn flasgger sklearn google-cloud-translate # See requirements.txt for all dependencies.
+pip install google-cloud-translate Flask flasgger sklearn # See requirements.txt for all dependencies.
 export FLASK_APP=app.py
 flask run
 ```
