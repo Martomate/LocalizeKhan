@@ -19,7 +19,7 @@ First, create a dataset and store it in training_data.txt and then train the cla
 python khan_clf.py
 ```
 
-Run a
+Run:
 
 ```bash
 flask run
