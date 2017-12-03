@@ -2,7 +2,7 @@ import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
 import urllib.request
-import googleTranslate
+import google_translate
 import pickle
 import json
 import wordlist
