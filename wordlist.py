@@ -1,11 +1,15 @@
+with open('wordlist.txt') as f:
+    content = f.readlines()
+
+content = dict([x.strip().split('=') for x in content])
 
 
 def getKeysStartingWith(text):
-    if (text == 'number'):
-        return ['number line']
-    return []
+    keys = []
+    for wordArr in content:
+        if (wordArr[0].startsWith(text)):
+            keys += wordArr[0]
+    return keys
 
 def getTranslation(phrase):
-    if (phrase == 'number line'):
-        return 'tallinje'
-    return phrase
+    return content.get(phrase)
