@@ -39,12 +39,12 @@ LocalizeKhan
 </tr>
 <tr>
   <th>Google Translate</th>
-  <td>{t1}</td>
+  <td style="max-width: 350px;">{t1}</td>
   <td>{c1}</td>
 </tr>
 <tr>
   <th>Using wordlist</th>
-  <td>{t2}</td>
+  <td style="max-width: 350px;">{t2}</td>
   <td>{c2}</td>
 </tr>
 </table>
