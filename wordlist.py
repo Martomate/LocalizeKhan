@@ -1,11 +1,11 @@
 
 
 def getKeysStartingWith(text):
-    if (text == 'number')
+    if (text == 'number'):
         return ['number line']
     return []
 
 def getTranslation(phrase):
-    if (phrase == 'number line')
+    if (phrase == 'number line'):
         return 'tallinje'
     return phrase
