@@ -1,0 +1,33 @@
+'Det romerska riket var den post-romerska republikens period av den antika romerska civilisationen, som karaktäriserades av regeringen som leddes av kejsare och stora territoriella innehav runt Medelhavet i Europa, Afrika och Asien', 1 
+'Staden Rom var den största staden i världen c. 100 f.Kr. - c. AD 400, med Konstantinopel (New Rome), blev den största omkring 500, [5] [6] och rikets befolkning växte till cirka 50 till 90 miljoner invånare (ungefär 20% av världens befolkning vid den tiden). 7] [5] Den 500-åriga republiken som föregick den var allvarligt destabiliserad i en rad civila krig och politisk konflikt, under vilken Julius Caesar utsågs till evig diktator och mördades sedan i 44 f.Kr.', 1 
+'Civil krig och avrättningar fortsatte, som kulminerade i segern av Octavian, Caesars adopterade son, över Mark Antony och Cleopatra vid Slaget vid Actium i 31 f.Kr. och annektering av Egypten', 1 
+'Octavians makt var då otillgänglig och i 27 f.Kr. gav den romerske senaten formellt honom övergripande makt och den nya titeln Augustus, som effektivt markerade slutet av den romerska republiken', 1 
+'Romens imperialperiod varade cirka 1500 år jämfört med den 500 år gamla republikanska eran', 1 
+'De två första århundradena av rikets existens var en period av oöverträffad politisk stabilitet och välstånd som kallades Pax Romana eller "Romerska Fred"', 0 
+'Efter Octavians seger ökade empiriens storlek dramatiskt', 0 
+'Efter mordet på Caligula i 41 AD, ansåg senaten kort återställande av republiken, men den prästoriska väktaren proklamerade Claudius kejsare istället', 1 
+'Under Claudius invaderade imperiet Britannia, dess första stora expansion sedan augusti', 1 
+'Efter Claudius efterträdare, Nero, begick självmord i år 68, led empiriet en serie korta civila krig, liksom ett samtidigt stort uppror i Judea, under vilken fyra olika legionära generaler proklamerades kejsare', 1 
+'Vespasian framträdde triumferande i AD 69, inrättande av den flavianska dynastin, innan den lyckades av sin son Titus, som öppnade Colosseum strax efter vulkanen Vesuvos utbrott', 1 
+'Hans korta regering följdes av hans brors domitiska långa regeringstid, som till sist mördades', 1 
+'Senaten utsåg då den första av de fem goda kejsarna', 0 
+'Imperiet nådde sin största utsträckning under Trajan, den andra i denna linje', 0 
+'En period med ökande problem och nedgång började med Commodus regering', 0 
+'Commodus mord i 192 utlöste år för de fem kejsarna, av vilka Septimius Severus kom segrande', 1 
+'Mordet på Alexander Severus år 235 ledde till kriget i det tredje århundradet, där 26 män förklarades kejsare av den romerska senaten över en femtioårsperiod', 1 
+'Det var inte förrän diocletianernas regering att riket stabiliserades fullständigt med introduktionen av Tetrarchy, som såg fyra kejsare regera imperiet på en gång', 1 
+'Detta arrangemang var i slutändan misslyckat, vilket ledde till ett inbördeskrig som äntligen slutades av Konstantin den Stora, som besegrade sina rivaler och blev rikets enda herre i 324', 0 
+'Constantin etablerade därefter en andra huvudstad i Byzantium, som han bytte namn till Konstantinopel', 0 
+'Det förblev huvudstaden i öst tills dess avlivning', 1 
+'Konstantin adopterade också kristendomen som senare blev rikets officiella statsgudstjänst', 1 
+'Efter att Theodosius I dödades i 395, var imperiet permanent delat mellan väst och öst', 0 
+'Det västra romerska rikets herravälde förstördes gradvis av maktmissbruk, civila krig, barbariska migrationer och invasioner, militära reformer och ekonomisk depression', 1 
+'Romsacken i 410 av visigoterna och igen i 455 av vandalerna accelererade det västra imperiet sönderfall, medan kejsarens deponering, Romulus Augustulus, i 476 av Odoacer, allmänt accepteras för att markera slutet av imperiet i väst', 1 
+'Augustulus erkändes dock aldrig av sin östliga kollega, och separat reglering i västra delen av imperiet upphörde endast att existera vid Julius Nepos död, i 480', 1 
+'Det östliga romerska riket (i modern historiografi som kallas det bysantinska riket) utstod för ett annat årtusende som en av världens ledande makter tillsammans med dess arv-rival Sassanid-riket, som hade arvt en århundraden gammal romersk-persisk konflikt från sin föregångare Parthians. [8] [9] Det föll så småningom till de ottomanska turkarna i 1453', 1 
+'Romerriket var bland de mest kraftfulla ekonomiska, kulturella, politiska och militära styrkorna i sin tidss värld', 1 
+'Det var ett av de största imperierna i världshistoria', 0 
+'På sin höjd under Trajan täckte den 5 miljoner kvadratkilometer. [2] [4] Den rymde över 70 miljoner människor, då 21% av världens hela befolkning', 0 
+'Empire livslängd och omfattande utsträckning säkerställde det permanenta inflytandet av latin och grekiskt språk, kultur, religion, uppfinningar, arkitektur, filosofi, lagar och former av regeringar på imperiernas ättlingar', 1 
+'Under hela medeltiden i Europa försökte man till och med skapa efterträdare till det romerska riket, däribland Rumäniens riket, ett korsfararstat och det heliga romerska riket', 1 
+'Genom den europeiska kolonialismen efter renässansen, och deras efterföljande stater, exporterades den greco-romerska och judisk-kristna kulturen globalt och spelade en avgörande roll för utvecklingen av den moderna världen.', 0 

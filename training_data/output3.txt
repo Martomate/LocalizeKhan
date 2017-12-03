@@ -1,0 +1,32 @@
+'Praetorian Guard var en elitenhet av den kejserliga romerska armén vars medlemmar fungerade som personliga livvakter till de romerska kejsarna', 1 
+'Under den romerska republikens epok fungerade prästorierna som en liten eskortskraft för högt ställda tjänstemän som armégeneraler eller provinsguvernörer', 1 
+'Med Republikens övergång till det romerska riket grundade den första kejsaren Augustus vakten som sin personliga säkerhetsdetalj', 0 
+'Trots att de fortsatte att tjäna i denna kapacitet i ungefär tre århundraden, blev vakten anmärkningsvärd för sin intriger och inblandning i romerska politiken, för att krossa kejsare och förkunna sina efterträdare', 0 
+'I 312 blev väktaren slutligen upplösad av Konstantin den Stora', 1 
+'Beteckningen härstammar under den romerska republiken, för vakterna av romerska generaler så tidigt som uppkomsten av Scipio-familjen framträdande omkring år 275 f.Kr.', 1 
+'Det fanns ingen permanent vakt belastad skyddet av militära generalofficer; Vissa militära officerare valde emellertid att omge sig med vakter för att säkerställa deras säkerhet', 1 
+'Till exempel, under Siege of Numantia, bildade Scipio Aemilianus en soldat på 500 män för sitt personliga skydd, eftersom sortier ofta var ganska farliga för de övre åren', 1 
+'Denna användning emulerades sedan och spreds, eftersom romerska generaler ockuperade sina positioner under längre perioder', 0 
+'Följaktligen hänvisades detta skydd till Cohors Prætoria', 1 
+'I händelse av strid skulle dessa kohorter intervenera som en slutlig stående reserv', 1 
+'Konsulerna skyddades vanligen av liktorerna, som skulle stanna kvar runt sina tält i armén', 0 
+'I slutet av året 40 f.Kr., Octavian (framtiden Augustus) och hans rival Mark Antony båda opererade ett antal praetorian enheter organiseras individuellt', 1 
+'Enligt Appian var bland dem veteraner som bildade kohorter', 1 
+'Mark Antony befallde tre kohorter i Orienten och i 32 f.Kr. utfärde han mynt till hederspresoriernas ära', 1 
+'Enligt Paul Orose befallde Octavian fem kohorter på Actium', 1 
+'Efter sin seger i Actium fusade Octavian sina styrkor med sina motståndares i en symbolisk återförening av Julius Caesars armé', 1 
+'De var de första handplockade veteranerna från den romerska armén som tjänstgjorde för livvakterna till kejsaren och följde honom med aktiv kampanj', 0 
+'De tjänade också som hemlig polis som skyddar de civila förvaltningarna och rättsstatsprincipen som lagts upp av senaten och kejsaren', 0 
+'Den kejserliga vakten löstes av kejsarens konstantin I i 4: e århundradet', 0 
+'De skilde sig från den kejserliga tyska livvakt som gav nära personligt skydd för de sena västerländska kejsarna', 0 
+'De gynnades av flera fördelar på grund av deras närhet till kejsaren: Praetorianerna var de enda som medgavs medan de bär armar i mitten av det heliga Rom - Pomerium', 1 
+'Deras obligatoriska tjänst var kortare, till exempel: 12 år med Praetorianerna istället för 16 år i legionerna som startade år 13 f.Kr., sedan transporteras till 16-20 år i år BC enligt Tacitus, och deras lön var mer förhöjd än en legionär', 1 
+'Under Nero var betalningen av en praetorian tre och en halv gånger den av en legionär, förstärkt av primära tillägg av donativum, beviljad av varje ny kejsare', 0 
+'Denna extra lön motsvarade flera års lön och upprepades ofta vid viktiga händelser i imperiet eller händelser som berörde den kejserliga familjen: födelsedagar, födslar och äktenskap', 0 
+'Stora monetära utdelningar eller livsmedelssubventioner förnyades och kompenserade praetorernas trovärdighet efter varje misslyckad särskild försökskonstant (som Messalinas mot Claudius i 48 AD eller Piso mot Nero i 65 AD)', 1 
+'Rädslade och fruktade av befolkningen och av den romerska senaten, fick prästorierna inte någon sympati från det romerska folket', 1 
+'En berömd dikt av Juvenal påminner om nageln kvar i sin fot av sandalen av en praetorisk rushing av honom', 1 
+'"Praetorian" har en pejorative förnuft på franska, som påminner om den ofta oroliga rollen som präorianen från antiken', 1 
+'Praetorierna fick väsentligt högre lön [1] än andra romerska soldater i någon av legionerna, på ett system som kallas sesquiplex stipendium, eller genom betalning och en halv', 1 
+'Så om legionärerna fick 250 denarii fick vakterna 375 per år (år)', 0 
+'Domitianer och Septimius Severus ökade stipendiet (betalning) till 1 500 denarii per år, fördelat i januari, maj och september.', 0 

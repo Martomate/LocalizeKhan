@@ -75,7 +75,7 @@ def classificationIndex(text):
     """
     text = [text]
     print('Text is {}'.format(text))
-    clf_name = 'clf_dummy'
+    clf_name = 'classifier'
     clf = pickle.load(open(clf_name, 'rb'))
     prob = clf.predict_proba(text)
     print(prob)

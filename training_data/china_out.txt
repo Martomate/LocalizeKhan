@@ -1,0 +1,26 @@
+'Kina, officiellt Folkrepubliken Kina, är en enhetlig suverän stat i östra Asien och världens mest folksamda land med en befolkning på cirka 1 404 miljarder.', 0 
+'[13] Omkring 9,6 miljoner kvadratkilometer (3,7 miljoner kvadratkilometer) är det världens näst största statligt landområde [19] och tredje eller fjärde största av totalt område.', 1 
+'[j] Styrs av Kinas kommunistiska parti, utövar jurisdiktion över 22 provinser, fem autonoma regioner, fyra direktstyrda kommuner (Peking, Tianjin, Shanghai och Chongqing) och de särskilda administrativa regionerna Hong Kong och Macau, som också hävdar suveränitet över Taiwan.', 1 
+'Kina framträdde som en av världens tidigaste civilisationer i den gula floden i den gula floden i norra Kina.', 1 
+'Under årtusenden grundades Kinas politiska system på ärftliga monarkier, eller dynastier, som började med den semi-legendariska Xia-dynastin.', 0 
+'Sedan dess har Kina utvidgats, sprungit och omförenats flera gånger.', 1 
+'1912 ersatte Republiken Kina (ROC) den sista dynastin och styrde det kinesiska fastlandet fram till 1949, när det besegrades av kommunistiska folkets befrielsearmé i det kinesiska inbördeskriget.', 0 
+'Kommunistpartiet etablerade Folkrepubliken Kina i Peking den 21 september 1949, medan ROC-regeringen återvänt till Taiwan med sin nuvarande faktiska huvudstad i Taipei.', 1 
+'Både ROC och PRC fortsätter att hävda att vara den legitima regeringen i hela Kina, fastän den senare har mer erkännande i världen och kontrollerar mer territorium.', 0 
+'Sedan införandet av ekonomiska reformer 1978 har Kinas ekonomi varit en av världens snabbast växande.', 0 
+'Från 2016 är det världens näst största ekonomi med nominell BNP och störst genom köpkraftparitet (PPP).', 1 
+'Kina är också världens största exportör och näst största importör av varor.', 0 
+'[20] Kina är ett erkänt kärnvapenstat och har världens största stående armé och näst största försvarsbudget.', 0 
+'[21] [22] Kina är en medlem av Förenta nationerna, eftersom den ersatte ROC som en permanent medlem av FN: s säkerhetsråd 1971.', 0 
+'Kina är också medlem i många formella och informella multilaterala organisationer, bland annat WTO, APEC, BRICS, Shanghai Cooperation Organization (SCO), BCIM och G20.', 0 
+'Kina är en stor makt och en stor regional makt inom Asien och har karakteriserats som en potentiell supermakt.', 1 
+'Det engelska ordet "Kina" bekräftas först i Richard Edens 1555 översättning [k] av den portugisiska explorer Duarte Barbosa 1516-tidningen.', 1 
+'[l] [31] Den demonym, det vill säga namnet på folket, och adjektivformen "kinesisk" utvecklades senare på modellen av portugisiska chinês och franska chinois.', 1 
+'[32] [m] Portugisiska Kina är tänkt att härleda sig från persiska Chīn (چین), och kanske till sist från sanskrit Cīna (चीन).', 1 
+'[34] Cina användes först i den tidiga hinduiska skriften, inklusive Mahābhārata (5: e århundradet f.Kr.) och Manuens lagar (2: a århundradet f.Kr.).', 0 
+'[35] I 1655 föreslog Martino Martini att ordet Kina härstammar från namnet Qin-dynastin (221-206 f.Kr.), [36] ett förslag som stöds av många senare forskare, [37] [38] [39] det finns också ett antal alternativa förslag.', 1 
+'Sedan slutet av kulturrevolutionen har Kina gjort betydande investeringar i vetenskaplig forskning, [356] med 163 miljarder dollar till forskning och utveckling 2012.', 0 
+'[357] Vetenskap och teknik ses som avgörande för att uppnå Kinas ekonomiska och politiska mål och hålls som en källa till nationell stolthet i en grad som ibland beskrivs som "techno-nationalism".', 0 
+'[358] Kinas investeringar i grundforskning och tillämpad vetenskaplig forskning kvarstår emellertid kvar av ledande tekniska befogenheter som Förenta staterna och Japan.', 1 
+'[356] [357] Kinesiska födda forskare har vunnit Nobelpriset i fysik fyra gånger, Nobelpriset för kemi och fysiologi eller medicin en gång respektive, även om de flesta av dessa forskare genomförde sin Nobel-vinnande forskning i västra nationer.', 1 
+'[S]', 0 
