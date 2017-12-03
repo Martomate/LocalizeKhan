@@ -59,8 +59,8 @@ LocalizeKhan
     return result
 
 
-@app.route('/api/translate/<string:text>/', methods=['GET'])
-def translateIndex(text):
+@app.route('/api/translateAll/<string:text>/', methods=['GET'])
+def translateAllIndex(text):
     """
     This is the translator API
     Call this api passing a piece of text and get back the Swedish translation
