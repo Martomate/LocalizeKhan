@@ -13,14 +13,46 @@ Swagger(app)
 @app.route('/', methods=['GET'])
 def index():
     text = request.args.get('text', '')
-    translationSimple = translateSimple(text)
-    translation = translateAdvanced(text)
-    return jsonify(
-        translationWithoutWordlist=translationSimple,
-        classificationWithoutWordlist=classification(translationSimple),
-        translation=translation,
-        classification=classification(translation)
-    )
+
+    result = """
+<center>
+<h1>
+LocalizeKhan
+</h1>
+<form action=".">
+<input type="text" name="text", value="{value}">
+<input type="submit" value="Translate">
+</form>
+    """.format(value=text)
+
+    if (text != ''):
+        translationSimple = translateSimple(text)
+        translation = translateAdvanced(text)
+        result += """
+<br />
+<div id="result">
+<table>
+<tr>
+  <th></th>
+  <th>Translation</th>
+  <th>How bad it is</th>
+</tr>
+<tr>
+  <th>Google Translate</th>
+  <td>{t1}</td>
+  <td>{c1}</td>
+</tr>
+<tr>
+  <th>Using wordlist</th>
+  <td>{t2}</td>
+  <td>{c2}</td>
+</tr>
+</table>
+</div>
+        """.format(t1=translationSimple, c1=classification(translationSimple), t2=translation, c2=classification(translation))
+
+    result += "</center>"
+    return result
 
 
 @app.route('/api/translate/<string:text>/', methods=['GET'])
