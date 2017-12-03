@@ -6,9 +6,9 @@ content = dict([x.strip().split('=') for x in content])
 
 def getKeysStartingWith(text):
     keys = []
-    for wordArr in content:
-        if (wordArr[0].startswith(text)):
-            keys += wordArr[0]
+    for key in content:
+        if (key.startswith(text)):
+            keys += key
     return keys
 
 def getTranslation(phrase):
