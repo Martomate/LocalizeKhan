@@ -7,7 +7,7 @@ content = dict([x.strip().split('=') for x in content])
 def getKeysStartingWith(text):
     keys = []
     for wordArr in content:
-        if (wordArr[0].startsWith(text)):
+        if (wordArr[0].startswith(text)):
             keys += wordArr[0]
     return keys
 
