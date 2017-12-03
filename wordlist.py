@@ -1,4 +1,4 @@
-with open('wordlist.txt') as f:
+with open('data/mathematics_dictionary-en-sv.txt') as f:
     content = f.readlines()
 
 content = dict([x.strip().split('=') for x in content])
