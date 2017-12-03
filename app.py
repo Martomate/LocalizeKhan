@@ -23,7 +23,7 @@ def index1(text):
 <h1>
 LocalizeKhan
 </h1>
-<textarea name="text" cols=50 rows=4 maxlength=5000 form="textForm">{value}</textarea><br /><br />
+<textarea name="text" cols=50 rows=4 maxlength=4500 form="textForm">{value}</textarea><br /><br />
 <form action="." id="textForm">
 <input type="submit" value="Translate">
 </form>
