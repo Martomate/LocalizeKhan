@@ -38,17 +38,17 @@ LocalizeKhan
 <table>
 <tr>
   <th></th>
+  <th>Google</th>
+  <th>Improved</th>
+</tr>
+<tr>
   <th>Translation</th>
-  <th>How good it is</th>
-</tr>
-<tr>
-  <th>Google Translate</th>
   <td style="max-width: 350px;">{t1}</td>
-  <td>{c1}</td>
+  <td style="max-width: 350px;">{t2}</td>
 </tr>
 <tr>
-  <th>Using wordlist</th>
-  <td style="max-width: 350px;">{t2}</td>
+  <th>Quality</th>
+  <td>{c1}</td>
   <td>{c2}</td>
 </tr>
 </table>
