@@ -15,6 +15,9 @@ def index():
     text = request.args.get('text', '')
 
     result = """
+<h4>
+<a href="apidocs">API documentation</a>
+</h4>
 <center>
 <h1>
 LocalizeKhan
