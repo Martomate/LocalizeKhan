@@ -161,21 +161,17 @@ def classificationIndex(text):
     )
 
 def translateSimple(text):
-    translation = googleTranslate.translate(text, 'sv')
-    return translation
+    return googleTranslate.translate(text, 'sv')
 
 def translateAdvanced(text):
-    translation = translateSimple(text)
-
     words = text.split(' ')
-
     for word in words:
         for phrase in wordlist.getKeysStartingWith(word):
             tr = wordlist.getTranslation(phrase)
             if (tr != None):
-                translation = translation.replace(phrase, tr)
+                text = text.replace(phrase, tr)
 
-    return translation
+    return translateSimple(text)
 
 def classification(text):
     text = [text]
