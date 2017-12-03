@@ -25,6 +25,11 @@ Run:
 flask run
 ```
 
+Visit [http://localhost:5000/apidocs/](http://localhost:5000/apidocs/) for details how to use the api
+
+# Available demo of API docs online
+
+Visit [http://localizekhan.herokuapp.com/apidocs/](http://localizekhan.herokuapp.com/apidocs/) for trying out the API.
 
 # Licence
 
