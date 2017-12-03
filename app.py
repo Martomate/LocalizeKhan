@@ -35,7 +35,7 @@ LocalizeKhan
         result += """
 <br />
 <div id="result">
-<table>
+<table border=1 style="border-collapse: collapse">
 <tr>
   <th></th>
   <th>Google</th>
