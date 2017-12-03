@@ -161,7 +161,7 @@ def classificationIndex(text):
     )
 
 def translateSimple(text):
-    return googleTranslate.translate(text, 'sv')
+    return google_translate.translate(text, 'sv')
 
 def translateAdvanced(text):
     words = text.split(' ')
