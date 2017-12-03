@@ -5,6 +5,8 @@ Please note: The classifier has not yet been trained with very much data.
 
 # Setup
 
+Please install Python 3.6.
+
 ```bash
 pip install google-cloud-translate Flask flasgger sklearn # See requirements.txt for all dependencies.
 export FLASK_APP=app.py
