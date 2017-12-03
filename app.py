@@ -23,7 +23,7 @@ def index1(text):
 <h1>
 LocalizeKhan
 </h1>
-<textarea name="text" cols=50 rows=4 maxlength=4500 form="textForm">{value}</textarea><br /><br />
+<textarea name="text" cols=50 rows=4 maxlength=1500 form="textForm">{value}</textarea><br /><br />
 <form action="." id="textForm">
 <input type="submit" value="Translate">
 </form>
@@ -39,7 +39,7 @@ LocalizeKhan
 <tr>
   <th></th>
   <th>Translation</th>
-  <th>How bad it is</th>
+  <th>How good it is</th>
 </tr>
 <tr>
   <th>Google Translate</th>
@@ -58,6 +58,49 @@ LocalizeKhan
     result += "</center>"
     return result
 
+
+@app.route('/api/translate/<string:text>/', methods=['GET'])
+def translateIndex(text):
+    """
+    This is the translator API
+    Call this api passing a piece of text and get back the Swedish translation
+    ---
+    tags:
+      - Translation API
+    parameters:
+      - name: text
+        in: path
+        type: string
+        required: true
+        description: The text
+    responses:
+      200:
+        description: Whether it's good or bad
+        schema:
+          id: translate
+          properties:
+            google_translation:
+              type: string
+              description: The translation
+            google_quality:
+              type: number
+              description: How good it is
+            improved_translation:
+              type: string
+              description: The improved translation
+            improved_quality:
+              type: number
+              description: How good it is
+    """
+
+    gt = translateSimple(text)
+    tt = translateAdvanced(text)
+    return jsonify(
+        google_translation=gt,
+        google_quality=classification(gt),
+        improved_translation=tt,
+        improved_quality=classification(tt)
+    )
 
 @app.route('/api/translate/<string:text>/', methods=['GET'])
 def translateIndex(text):
@@ -108,13 +151,13 @@ def classificationIndex(text):
         schema:
           id: classifier
           properties:
-            isGood:
+            quality:
               type: number
-              description: Whether it's good or bad
+              description: How good it is
     """
 
     return jsonify(
-        isGood=classification(text)
+        quality=classification(text)
     )
 
 def translateSimple(text):
