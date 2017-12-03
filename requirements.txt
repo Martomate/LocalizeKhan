@@ -2,3 +2,6 @@ Flask
 gunicorn
 flasgger
 google-cloud-translate
+sklearn
+numpy
+scipy

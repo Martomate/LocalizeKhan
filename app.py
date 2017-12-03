@@ -2,9 +2,10 @@ import random
 from flask import Flask, jsonify, request
 from flasgger import Swagger
 import urllib.request
-from googleTranslate import translate
+import googleTranslate
 import pickle
 import json
+import wordlist
 
 app = Flask(__name__)
 Swagger(app)
@@ -12,11 +13,13 @@ Swagger(app)
 @app.route('/', methods=['GET'])
 def index():
     text = request.args.get('text', '')
-    translation = translate(text, 'sv')
-    classif = classification(text)
+    translationSimple = translateSimple(text)
+    translation = translateAdvanced(text)
     return jsonify(
+        translationWithoutWordlist=translationSimple,
+        classificationWithoutWordlist=classification(translationSimple),
         translation=translation,
-        classification=classif
+        classification=classification(translation)
     )
 
 
@@ -46,7 +49,7 @@ def translateIndex(text):
     """
 
     return jsonify(
-        translation=translate(text, "sv")
+        translation=translateAdvanced(text)
     )
 
 @app.route('/api/classifier/<string:text>/', methods=['GET'])
@@ -73,17 +76,37 @@ def classificationIndex(text):
               type: number
               description: Whether it's good or bad
     """
+
+    return jsonify(
+        isGood=classification(text)
+    )
+
+def translateSimple(text):
+    translation = googleTranslate.translate(text, 'sv')
+    return translation
+
+def translateAdvanced(text):
+    translation = translateSimple(text)
+
+    words = text.split(' ')
+
+    for word in words:
+        for phrase in wordlist.getKeysStartingWith(word):
+            tr = wordlist.getTranslation(phrase)
+            if (tr != None):
+                translation = translation.replace(phrase, tr)
+
+    return translation
+
+def classification(text):
     text = [text]
-    print('Text is {}'.format(text))
-    clf_name = 'classifier'
+
+    clf_name = 'clf_dummy'
     clf = pickle.load(open(clf_name, 'rb'))
     prob = clf.predict_proba(text)
-    print(prob)
     prob = prob[0][0]
-    print('Sliced prob',prob)
-    return jsonify(
-        isGood=prob
-    )
+
+    return prob
 
 
 if __name__ == '__main__':
