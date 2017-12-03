@@ -8,8 +8,12 @@ def getKeysStartingWith(text):
     keys = []
     for key in content:
         if (key.startswith(text)):
-            keys += key
+            keys.append(key)
     return keys
 
 def getTranslation(phrase):
-    return content.get(phrase)
+    tr = content.get(phrase)
+    if tr != None:
+        return tr.lower()
+    else:
+        return None
