@@ -13,13 +13,20 @@ To be able to use Google's service for automatic translation it's required to se
 
 # Usage
 
+First, create a dataset and store it in training_data.txt and then train the classifier:
+
+```bash
+python khan_clf.py
+```
+
+Run:
+
 ```bash
 flask run
 ```
+
 
 # Licence
 
 The MIT License (MIT)
 Copyright (c) 2017
-
-
