@@ -12,8 +12,9 @@ Swagger(app)
 
 @app.route('/', methods=['GET'])
 def index():
-    text = request.args.get('text', '')
+    return index1(request.args.get('text', ''))
 
+def index1(text):
     result = """
 <h4>
 <a href="apidocs">API documentation</a>
@@ -22,7 +23,7 @@ def index():
 <h1>
 LocalizeKhan
 </h1>
-<textarea name="text" cols=50 rows=4 form="textForm">{value}</textarea><br /><br />
+<textarea name="text" cols=50 rows=4 maxlength=5000 form="textForm">{value}</textarea><br /><br />
 <form action="." id="textForm">
 <input type="submit" value="Translate">
 </form>
