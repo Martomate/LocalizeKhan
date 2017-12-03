@@ -1,6 +1,8 @@
 # LocalizeKhan
 Our solution improves the process of proofreading by automatically classifying translated texts to determine the quality of the translation. The idea is to minimize the amount of tedious manual work of proofreading texts.
 
+The Bayes classifier is built by using the library scikit-learn and natural language toolkit. The API is built with the tool Swagger, see demo below.
+
 Please note: The classifier has not yet been trained with very much data.
 
 # Installation
